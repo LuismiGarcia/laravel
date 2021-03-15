@@ -23,12 +23,12 @@
                 <td>{{$prof->dni}}</td>
                 <td>{{$prof->direccion}}</td>
                 <td>{{$prof->telefono}}</td>
-                <td><a href="{{route("profesor.edit", $prof)}}"><button class="btn btn-success">Editar</button></a></td>
+                <td><a href="{{route("profesor.edit", $prof)}}"><button id="button2" class="btn btn-success">Editar</button></a></td>
                 <td>
                     <form action="{{route("profesor.destroy", $prof)}}" method="post">
                         @csrf
                         @method("DELETE")
-                        <button class="btn btn-dark">Borrar</button>
+                        <button id="button" class="btn btn-dark">Borrar</button>
                     </form>
 
                 </td>
